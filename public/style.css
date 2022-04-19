@@ -1,0 +1,143 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #eee;
+}
+
+header {
+    font-family: 'McLaren', cursive;
+    background-color: #f5ba13;
+    box-shadow: 0 1px 5px 5px rgb(206, 203, 203);
+}
+
+header h1 {
+    color: #fff;
+    padding: 15px;
+    padding-left: 30px;
+    font-weight: 100;
+}
+
+#form-container {
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px 2px #ccc;
+    position: relative;
+}
+
+#form-container input, textarea {
+    display: block;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+}
+
+input {
+    width: 25.2vw;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+    padding-top: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    resize: none;
+}
+
+#form-container button {
+    padding: 12px 8px;
+    border: none;
+    border-radius: 100%;
+    background-color: #f5ba13;
+    color: #fff;
+    position: absolute;
+    right: 5%;
+    bottom: -12%;
+    cursor: pointer;
+}
+
+#form-container button:hover {
+    background-color: #e1b027;
+}
+
+#note {
+    position: relative;
+    width: 20vw;
+    background-color: #fff;
+    padding: 10px;
+    margin: 15px 5px 0 25px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px 1px rgb(206, 203, 203);
+    float: left;
+}
+
+#note h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#note p {
+    font-weight: 0;
+    margin-bottom: 8px;
+}
+
+#note button {
+    border: none;
+    background-color: #fff;
+    color: #f5ba13;
+    cursor: pointer;
+}
+
+.delete {
+    float: right;
+}
+
+#save-btn {
+    position: absolute;
+    display: none;
+    right: 130px;
+    bottom: 12.5px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    position: fixed;
+    bottom: 0;
+    left: 45%;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+@media screen and (max-width: 480px) {
+    #note {
+        width: 50vw;
+    }
+    footer p {
+        left: 25%;
+    }
+    input {
+        width: 82vw;
+    }
+    #save-btn {
+        left: 70px;
+    }
+}
